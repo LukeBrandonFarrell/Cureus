@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimary"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:background="@drawable/square"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/srch"/>
+            <EditText
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+android:textColor="@android:color/black"
+                android:inputType="text"
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="22dp"
+                android:background="@mipmap/record"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:background="@color/colorPrimary"
+       android:weightSum="2"
+
+       android:orientation="horizontal"
+       >
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_weight="1"
+           android:layout_marginTop="5dp"
+           android:id="@+id/listclick"
+           >
+           <ImageView
+               android:layout_width="20dp"
+               android:layout_height="20dp"
+               android:src="@mipmap/list"
+               android:id="@+id/listimagewhite"
+               android:layout_marginTop="7dp"
+               android:layout_marginLeft="40dp"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/txtlistwhite"
+               android:text="List"
+               android:layout_marginTop="5dp"
+               android:layout_marginLeft="25dp"
+               android:textSize="20dp"
+               android:textColor="@color/colorWhite"
+               android:layout_centerInParent="true"/>
+           <ImageView
+               android:layout_width="20dp"
+               android:layout_height="20dp"
+               android:src="@mipmap/listgray"
+               android:id="@+id/listimagegray"
+               android:visibility="gone"
+               android:layout_marginTop="7dp"
+               android:layout_marginLeft="40dp"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/txtlistgray"
+               android:text="List"
+               android:visibility="gone"
+               android:layout_marginTop="5dp"
+               android:layout_marginLeft="25dp"
+               android:textSize="20dp"
+               android:textColor="@color/colorTertiary"
+               android:layout_centerInParent="true"/>
+       </RelativeLayout>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_weight="1"
+           android:layout_marginTop="5dp"
+           android:id="@+id/mapclick"
+           >
+           <ImageView
+               android:layout_width="20dp"
+               android:layout_height="20dp"
+               android:src="@mipmap/location2"
+               android:id="@+id/mapimagewhite"
+               android:layout_marginTop="7dp"
+               android:layout_marginLeft="40dp"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/txtmapwhite"
+               android:text="Map"
+               android:layout_marginTop="5dp"
+               android:layout_marginLeft="25dp"
+               android:textSize="20dp"
+               android:textColor="@color/colorWhite"
+               android:layout_centerInParent="true"/>
+
+           <!--mapgray-->
+
+           <ImageView
+               android:layout_width="20dp"
+               android:layout_height="20dp"
+               android:src="@mipmap/mapgray"
+               android:id="@+id/mapgrayimage"
+
+               android:layout_marginTop="7dp"
+               android:layout_marginLeft="40dp"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/txtmapgray"
+               android:text="Map"
+
+               android:layout_marginTop="5dp"
+               android:layout_marginLeft="25dp"
+               android:textSize="20dp"
+               android:textColor="@color/colorTertiary"
+               android:layout_centerInParent="true"/>
+       </RelativeLayout>
+
+
+   </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rel_list">
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/listview"
+                android:visibility="visible">
+
+            </ListView>
+
+            <com.google.android.gms.maps.MapView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/mMapView"
+                android:clickable="true"
+                android:visibility="gone">
+
+
+            </com.google.android.gms.maps.MapView>
+                      </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Cureus</string>
+    <string name="gps_setting">Setting</string>
+    <string name="enable_gps">set enable gps setting</string>
+    <string name="setting">setting</string>
+    <string name="cancel">cancel</string>
+    <string name="barber">Bio,lorem ipsum doller sit amet,consectetur
+        adipiscing elit.Nam massa quam. lorem ipsum doller
+        sit amet,consectetur adipiscing elit.Nam massa
+        quam.</string>
+</resources>
